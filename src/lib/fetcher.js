@@ -13,7 +13,8 @@ const processResult = ($, elem) => {
 
   const telephone = $('ul > ul > li.call > p', elem)
     .text()
-    .trim();
+    .trim()
+    .replace(/\s+/g, '');
 
   const website = $('ul > ul > li.site > a', elem).attr('href');
 
@@ -49,6 +50,8 @@ export const scrapeOffers = async (
   const results = $('#restaurantListings > div')
     .map((i, elem) => processResult($, elem))
     .get();
+
+  results.pop(); // remove last element (empty)
 
   return results;
 };

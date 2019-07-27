@@ -1,7 +1,7 @@
 {
-  "name": "node-es6-starter",
+  "name": "node-scraper-amex",
   "version": "1.0.0",
-  "description": "Node.js ES6 starter with Babel & ESLint",
+  "description": "Node JS Scraper for AMEX cards in Singapore",
   "main": "dist/index.js",
   "babel": {
     "presets": [
@@ -34,12 +34,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/palanik/node-es6-starter.git"
+    "url": "https://github.com/myrtleTree33/node-scraper-amex"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
-  "author": "N. Palani Kumanan",
+  "author": "Joel Tong",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.26.0",
