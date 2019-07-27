@@ -18,11 +18,21 @@ const processResult = ($, elem) => {
 
   const website = $('ul > ul > li.site > a', elem).attr('href');
 
+  let imgUrl = $('div > div', elem).html();
+  console.log(imgUrl);
+  if (imgUrl) {
+    const matches = imgUrl.match(/background:url\(&apos;(.*)&apos;\)/);
+    if (matches.length > 1) {
+      imgUrl = matches[1];
+    }
+  }
+
   return {
     title,
     address,
     telephone,
     website,
+    imgUrl,
     offers: [
       { minGuest: 1, maxGuest: 1, discount: 15 },
       { minGuest: 2, maxGuest: 2, discount: 50 },
