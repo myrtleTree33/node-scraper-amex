@@ -1,6 +1,6 @@
 {
   "name": "node-scraper-amex",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Node JS Scraper for AMEX cards in Singapore",
   "main": "dist/index.js",
   "babel": {
