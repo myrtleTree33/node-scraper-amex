@@ -19,7 +19,7 @@ const processResult = ($, elem) => {
   const website = $('ul > ul > li.site > a', elem).attr('href');
 
   let imgUrl = $('div > div', elem).html();
-  console.log(imgUrl);
+
   if (imgUrl) {
     const matches = imgUrl.match(/background:url\(&apos;(.*)&apos;\)/);
     if (matches.length > 1) {
